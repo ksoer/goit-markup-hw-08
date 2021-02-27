@@ -1,0 +1,44 @@
+.footer-form {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.input-mail-footer {
+  display: flex;
+  width: 358px;
+  height: 50px;
+  color: var(--primary-white-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-right: 12px;
+  padding: 15px;
+}
+
+.footer-modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  min-width: 200px;
+  height: 50px;
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-telegr-btn {
+  margin-left: 10px;
+  height: 24px;
+  width: 24px;
+}

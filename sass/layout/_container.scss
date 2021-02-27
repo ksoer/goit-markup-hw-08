@@ -1,0 +1,16 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .header & {
+    display: flex;
+    align-items: center;
+  }
+
+  .my-work & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

@@ -1,0 +1,45 @@
+.benefits-section {
+  padding: 94px 0px;
+}
+
+.benefits-list {
+  display: flex;
+
+  & h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+}
+
+.benefits-item {
+  max-width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.thumb-benefits {
+  height: 120px;
+  background-color: var(--primary-team-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+}
