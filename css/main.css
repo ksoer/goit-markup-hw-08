@@ -206,6 +206,7 @@ body {
   height: 400px;
   padding-top: 118px;
   margin: 0 auto;
+  margin-bottom: 60px;
   text-align: center;
   background-color: var(--primary-footer-head-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/mobile-backgrond-img.jpg);
@@ -283,14 +284,6 @@ body {
   background: var(--hover-color-btn);
 }
 
-.benefits-section {
-  padding: 94px 0px;
-}
-
-.benefits-list {
-  display: flex;
-}
-
 .benefits-list h3 {
   font-weight: 700;
   font-size: 14px;
@@ -298,6 +291,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -308,15 +302,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.benefits-item {
-  max-width: 270px;
+.benefits-list .benefits-item {
+  margin-bottom: 30px;
 }
 
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.thumb-benefits {
+.benefits-list .thumb-benefits {
   height: 120px;
   background-color: var(--primary-team-color);
   display: flex;
@@ -325,9 +315,25 @@ body {
   margin-bottom: 30px;
 }
 
-.benefits-icon {
+.benefits-list .benefits-icon {
   width: 70px;
   height: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .benefits-list h3 {
+    text-align: left;
+  }
+  .benefits-item {
+    width: 354px;
+  }
+  .benefits-item:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
 .section-about {
