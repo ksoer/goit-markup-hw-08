@@ -441,6 +441,7 @@ body {
 
 .developers-information {
   text-align: center;
+  height: 162px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -544,7 +545,6 @@ body {
     padding-right: 32px;
   }
   .list-socialnetwork {
-    display: flex;
     justify-content: space-between;
   }
   .icon {
@@ -687,9 +687,8 @@ footer {
 .footer-logo-link {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   color: var(--primary-white-color);
   font-family: Raleway, sans-serif;
   font-weight: 400;
@@ -748,6 +747,7 @@ footer {
 
 .list-socialnetwork {
   margin-bottom: 60px;
+  flex-wrap: nowrap;
 }
 
 .input-footer {
@@ -765,6 +765,7 @@ footer {
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
+  padding: 16px 15px;
   margin-bottom: 20px;
 }
 
@@ -792,6 +793,70 @@ footer {
   margin-left: 10px;
   height: 24px;
   width: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .conteiner-footer-address {
+    justify-content: center;
+    align-items: center;
+    margin-right: 165px;
+  }
+  .input-mail-footer {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner-footer-address {
+    margin-right: 70px;
+  }
+  .footer-logo-link {
+    justify-content: left;
+  }
+  .address-list-str {
+    text-align: left;
+  }
+  .address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer-social {
+    margin-right: 93px;
+  }
+  .title-footer-social {
+    text-align: left;
+  }
+  .footer-social-link:hover, .footer-social-link:focus {
+    background-color: var(--accent-color);
+  }
+  .footer-social-link:not(:last-child) {
+    margin-right: 10px;
+  }
+  .container-footer {
+    align-items: baseline;
+  }
+  .footer-form {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .input-mail-footer {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+  }
+  .icon-telegr-btn {
+    margin-left: 10px;
+    height: 24px;
+    width: 24px;
+  }
 }
 
 .list-button {
