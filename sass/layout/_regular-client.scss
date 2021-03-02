@@ -6,6 +6,8 @@
 .list-client {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .team-title {
   font-weight: 700px;
@@ -16,22 +18,19 @@
 }
 
 .list-item-client {
-  &:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-
-.list-item-client {
   display: flex;
+  align-content: center;
   justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
-  width: 210px;
+  width: calc((100% - 15px * 4) / 2);
+  // width: 210px;
   height: 90px;
+  margin-left: 15px;
+  margin-right: 15px;
 
-  &:nth-child(odd) {
-    margin-right: 30px;
-  }
+  // &:nth-child(odd) {
+  //   margin-right: 30px;
+  // }
 }
 
 .client-link {
@@ -84,13 +83,16 @@
     align-items: center;
   }
 
-  .list-item-client:nth-child(3n + 3) {
-    margin-right: 0px;
-  }
-  .list-item-client:not(:nth-child(3n + 3)) {
-    margin-right: 30px;
+  .list-item-client {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 226px;
   }
 }
+//   .list-item-client:not(:nth-child(3n + 3)) {
+//     margin-right: 15px;
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .client-section {
@@ -106,8 +108,9 @@
     letter-spacing: 0.03em;
   }
 
-  .list-item-client:not(:last-child) {
-    margin-right: 30px;
+  .list-item-client {
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   .list-item-client {

@@ -567,6 +567,8 @@ body {
 .list-client {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .team-title {
@@ -577,21 +579,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-.list-item-client:nth-child(odd) {
-  margin-right: 30px;
-}
-
 .list-item-client {
   display: flex;
+  align-content: center;
   justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
-  width: 210px;
+  width: calc((100% - 15px * 4) / 2);
   height: 90px;
-}
-
-.list-item-client:nth-child(odd) {
-  margin-right: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .client-link {
@@ -642,11 +638,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .list-item-client:nth-child(3n + 3) {
-    margin-right: 0px;
-  }
-  .list-item-client:not(:nth-child(3n + 3)) {
-    margin-right: 30px;
+  .list-item-client {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 226px;
   }
 }
 
@@ -662,8 +657,9 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
   }
-  .list-item-client:not(:last-child) {
-    margin-right: 30px;
+  .list-item-client {
+    margin-right: 15px;
+    margin-left: 15px;
   }
   .list-item-client {
     width: 170px;
