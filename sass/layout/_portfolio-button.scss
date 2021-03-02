@@ -1,12 +1,18 @@
+.my-work {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .list-button {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // justify-content: center;
+  margin-bottom: 40px;
 }
 
 .button-item:not(:last-child) {
   margin-right: 8px;
 }
+
 .button-title {
   font-weight: 500;
   font-size: 16px;
@@ -16,10 +22,11 @@
   color: var(--secondary-text-color);
   background: var(--primary-backgroun-color-team);
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   min-width: 73px;
   height: 38px;
+  margin-bottom: 15px;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
@@ -34,5 +41,10 @@
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-button {
+    justify-content: center;
   }
 }
