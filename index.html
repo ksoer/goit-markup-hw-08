@@ -13,12 +13,18 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header">
+    <header >
         <div class="container">
+            <div class="header">
             <nav class="navigation">
                 <a class="navigation-logo link" href="#">
                     <span class="logo-color-web">Web</span>Studio
                 </a>
+                <button type="button" class="header-open-menu-btn" data-modal-close>
+                    <svg class="header-burger-btn">
+                        <use href="./image/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
                 <ul class="nav-list list">
                     <li class="nav-list-item">
                         <a class="nav-link accent link" href="./index.html">Студия</a>
@@ -30,7 +36,7 @@
                         <a class="nav-link link" href="#">Контакты</a>
                     </li>
                 </ul>
-            </nav>
+            
                 <ul class="contakt-list list">
                     <li class="contakt-list-item list">
                         <a class="contakt-link link" href="mailto:info@devstudio.com">
@@ -50,6 +56,8 @@
                         </a>
                     </li>
                 </ul>
+                </nav> 
+        </div>
         </div>
     </header>
     <main>
