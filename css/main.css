@@ -1105,12 +1105,27 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 90%;
+  max-width: 450px;
   height: 609px;
   padding: 40px;
+  overflow: scroll;
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  fill: #000000;
+  cursor: pointer;
 }
 
 .modal-close-btn {
@@ -1235,8 +1250,9 @@ footer {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.714;
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .modal-form-label-policy a {
@@ -1268,6 +1284,14 @@ footer {
   border-radius: 4px;
   cursor: pointer;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    overflow: hidden;
+  }
 }
 
 .navigation-logo {
