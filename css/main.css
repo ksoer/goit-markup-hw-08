@@ -138,13 +138,12 @@ body {
   padding: 0;
 }
 
-.mobile-close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
+.header-burger-btn {
+  width: 30px;
+  height: 30px;
+  fill: #000000;
 }
 
-.header-burger-btn,
 .icon-close {
   width: 40px;
   height: 40px;
@@ -1230,17 +1229,9 @@ footer {
   cursor: pointer;
 }
 
-.modal-close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background: var(--primary-white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  fill: #000000;
-  cursor: pointer;
+.backdrop-icon-close {
+  width: 18px;
+  height: 18px;
 }
 
 .is-hidden {
@@ -1386,6 +1377,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    max-width: 528px;
     height: 581px;
     overflow: hidden;
   }
